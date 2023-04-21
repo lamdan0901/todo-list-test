@@ -1,14 +1,19 @@
-import { Fragment } from "react";
-import { Outlet, ScrollRestoration } from "react-router-dom";
-import useDebugRender from "tilg";
+import Loading from "@/components/Loading";
+import { lazy, Suspense } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-export default function App() {
-  useDebugRender();
+const HomePage = lazy(() => import("./pages/Home"));
 
+const App = () => {
   return (
-    <Fragment>
-      <Outlet />
-      <ScrollRestoration />
-    </Fragment>
+    <BrowserRouter>
+      <Suspense fallback={<Loading />}>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+        </Routes>
+      </Suspense>
+    </BrowserRouter>
   );
-}
+};
+
+export default App;

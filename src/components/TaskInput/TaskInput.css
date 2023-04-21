@@ -1,0 +1,25 @@
+.task-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.task-desc {
+  margin-top: 10px;
+  width: 100%;
+  max-width: -webkit-fill-available;
+}
+
+.task-date-n-priority {
+  display: flex;
+  gap: 20px;
+}
+
+.due-date,
+.priority {
+  flex: 1;
+}
+
+.new-task .submit-btn {
+  margin-top: 30px;
+}

@@ -1,0 +1,23 @@
+.bulk-action {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  background-color: #bbb;
+}
+
+.bulk-action .remove-btn {
+  margin-left: 15px;
+}
+
+.bulk-action-wrapper {
+  padding: 20px 35px;
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

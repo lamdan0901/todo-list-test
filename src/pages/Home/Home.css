@@ -1,0 +1,84 @@
+.container {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  max-width: 1440px;
+  margin: auto;
+  width: 100%;
+}
+
+.new-task-container {
+  width: 100%;
+  padding: 20px;
+  flex: 4;
+}
+
+.header-title {
+  text-align: center;
+  margin: 10px auto 60px auto;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 80px;
+  flex: 6;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.task-item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #ddd;
+}
+.task-item .action-btn {
+  display: flex;
+  gap: 15px;
+  max-width: 220px;
+  flex-wrap: wrap;
+}
+
+.task-detail {
+  background-color: #ddd;
+  margin-top: 10px;
+  padding: 20px 15px;
+  border-radius: 6px;
+}
+.task-detail .submit-btn {
+  width: 100%;
+}
+
+@media screen and (max-width: 1080px) {
+  .container {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .task-item .action-btn {
+    justify-content: flex-end;
+  }
+  .task-item .action-btn .btn {
+    width: 100%;
+    max-width: 130px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0;
+  }
+}
