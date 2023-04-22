@@ -7,10 +7,10 @@ interface TaskBulkProps {
 
 const TaskBulk = ({ onRemoveTasks }: TaskBulkProps) => {
   return (
-    <div className="bulk-action">
-      <div className="bulk-action-wrapper">
+    <div className="bulk-action-container">
+      <div className="bulk-action">
         <div className="title">Bulk Action: </div>
-        <div>
+        <div className="action-btn">
           <button className="done-btn btn" type="button">
             Done
           </button>

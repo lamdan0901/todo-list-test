@@ -70,20 +70,19 @@ const HomePage = () => {
     );
 
     setTasks(updatedTasks);
-    localStorage.setItem("tasks", JSON.stringify(updatedTasks));
-
     setSelectedTask(null);
     (e.target as HTMLFormElement).reset();
+    localStorage.setItem("tasks", JSON.stringify(updatedTasks));
   };
 
   return (
     <div className="container">
-      <div className="new-task-container">
+      <div className="new-task">
         <h1 className="header-title">New Task</h1>
         <TaskInput onSubmitForm={handleSubmitForm} submitBtnText="Add" />
       </div>
 
-      <div className="todo-container">
+      <div className="todo">
         <h1 className="header-title">Todo List</h1>
         <input
           type="search"

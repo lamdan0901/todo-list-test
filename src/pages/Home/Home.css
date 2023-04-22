@@ -7,7 +7,7 @@
   width: 100%;
 }
 
-.new-task-container {
+.new-task {
   width: 100%;
   padding: 20px;
   flex: 4;
@@ -18,7 +18,7 @@
   margin: 10px auto 60px auto;
 }
 
-.todo-container {
+.todo {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -80,5 +80,16 @@
 @media screen and (max-width: 480px) {
   .container {
     padding: 0;
+  }
+
+  .task-item {
+    align-items: unset;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .task-item .action-btn {
+    display: flex;
+    max-width: unset;
+    justify-content: center;
   }
 }
