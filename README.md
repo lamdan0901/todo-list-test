@@ -14,4 +14,4 @@ yarn preview - start prod build
 
 ### Prerequisites
 
-- `NODE` version > 16.14
+-  `NODE` version > 16.14
